@@ -1,0 +1,187 @@
+body {
+  background: #e0e0e061;
+}
+
+.register {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register-box {
+  background-color: #ffffff;
+  padding: 50px 50px 50px 50px;
+}
+
+.header-text {
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+.header-text.right p {
+  position: relative;
+  float: right;
+  bottom: 35px;
+  font-size: 12px;
+  color: #989797;
+}
+
+.register a {
+  color: #000dff;
+  text-decoration: none;
+}
+
+.register a:hover {
+  color: #0079ff;
+}
+
+label {
+  margin-top: 0px;
+  display: block;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  margin: 5px 0 20px 0;
+  height: 35px;
+  border: 1px solid grey;
+  width: 380px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+button {
+  width: 380px;
+  display: block;
+  margin: 10px 0 10px 0;
+  height: 35px;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.check-box {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+
+.check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 21px;
+  width: 21px;
+  border-radius: 6px;
+}
+/* On mouse-over, add a grey background color */
+
+.check-box:hover input~.checkmark {
+  background-color: rgb(235, 45, 45);
+}
+/* When the checkbox is checked */
+
+.check-box input:checked~.checkmark {
+  background-color:#555352e0;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 21px;
+  width: 21px;
+}
+/* Show the checkmark when checked */
+
+.check-box input:checked~.checkmark:after {
+  display: block;
+}
+
+.check-box .checkmark:after {
+  left: 8px;
+  top: 2px;
+  width: 6px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate( 45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate( 45deg);
+}
+
+.register-box p {
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.signup-button button {
+  background: #555352e0;
+  border: none;
+  height: 45px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.signup-button button:hover {
+  background-color: #363533e6;
+}
+
+.email-button button {
+  background: #ffffffe6;
+  border: 1px solid;
+  height: 45px;
+  color: #000000e6;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.email-button button:hover {
+  background-color: #3a38361c;
+}
+
+.social-button button {
+  width: 200px;
+  height: 45px;
+  color: white;
+  background: #2e5c9af2;
+  border: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.google-button button {
+  left: -20px;
+  position: relative;
+  background: #e0540b;
+}
+
+.social-button button i {
+  padding-right: 20px;
+}
