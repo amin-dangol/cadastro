@@ -1,0 +1,17 @@
+/*********************for ipad**************/
+
+@media all and (device-width: 768px) {
+    .register {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .social-button button {
+        width: 380px;
+    }
+    .google-button button {
+        left: 0;
+    }
+}
+
